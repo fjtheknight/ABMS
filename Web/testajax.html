@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <style>
+        .txt_block {
+          border: 2px solid black;
+          width: 300px;
+          height: 200px;
+          padding: 25px 25px 25px 25px;
+          margin: 3px 3px 3px 5px;
+          text-align: center //background-color: grey;
+          // float: left;
+      }
+      .txt_block2 {
+          border: 2px solid black;
+          width: 300px;
+          height: 350px;
+          padding: 25px 25px 25px 25px;
+          margin: 3px 3px 3px 5px;
+          text-align: center //background-color: grey;
+          //float: left;
+      }
+      .txt_block3 {
+          border: 2px solid black;
+          width: 300px;
+          height: 150px;
+          padding: 25px 25px 25px 25px;
+          margin: 3px 3px 3px 5px;
+          text-align: center //background-color: grey;
+          //float: left;
+      }
+      .txt_block4 {
+          border: 2px solid black;
+          width: 300px;
+          height: 50px;
+          padding: 25px 25px 25px 25px;
+          margin: 3px 3px 3px 5px;
+          text-align: center //background-color: grey;
+          // float: left;
+      }
+      .txt_block5 {
+          border: 2px solid black;
+          width: 300px;
+          height: 150px;
+          padding: 25px 25px 25px 25px;
+          margin: 3px 3px 3px 5px;
+          text-align: center //background-color: grey;
+          //  float: left;
+      }
+  </style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+       
+        function calculate() {
+            
+
+
+
+
+            var n1 = parseFloat(document.getElementById('c1').value);
+            var n2 = parseFloat(document.getElementById('c2').value);
+            var n3 = parseFloat(document.getElementById('c3').value);
+            var n4 = parseFloat(document.getElementById('c4').value);
+            var n5 = parseFloat(document.getElementById('c5').value);
+            var n6 = parseFloat(document.getElementById('c6').value);
+            var n7 = parseFloat(document.getElementById('c7').value);
+            var n8 = parseFloat(document.getElementById('c8').value);
+            var n9 = parseFloat(document.getElementById('c9').value);
+            var n10 = parseFloat(document.getElementById('c10').value);
+            var n11 = parseFloat(document.getElementById('cs1').value);
+            var n12 = parseFloat(document.getElementById('cs2').value);
+            var n22 = parseFloat(document.getElementById('cs22').value);
+            
+            document.getElementById('t1').value = n11+n12+n22;
+            document.getElementById('t2').value = n1+n2+n3+n4+n5+n6+n7;
+            document.getElementById('t3').value = n8+n9;
+            var n100 = parseFloat(document.getElementById('t1').value);
+            var n110 = parseFloat(document.getElementById('t2').value);
+            var n120 = parseFloat(document.getElementById('t3').value);
+            document.getElementById('r1').value = n10+n100+n110+n120;
+            document.getElementById('r2').value = n10;
+        }
+    </script>
+
+
+
+
+    <div class="txt_block">
+
+
+       Charges de structure<br><br>
+       Dotation aux amortissements:<br>
+       <input type="text" id="cs1" value="0"     text-align= "right";>
+       <br>
+       Frais Financiers:<br>
+       <input type="text" id="cs22" value="0">
+       <br>
+       Autres charges de structure:<br>
+       <input type="text" id="cs2" value="0">
+       <br>
+       Total:<br>
+       <input type="text" id="t1" value="0" readonly>
+       <br>
+   </div>
+   <div class="txt_block">
+
+
+       Charges de structure<br><br>
+       Dotation aux amortissements:<br>
+       <input type="text" id="cs1" value="0"     text-align= "right";>
+       <br>
+       Frais Financiers:<br>
+       <input type="text" id="cs22" value="0">
+       <br>
+       Autres charges de structure:<br>
+       <input type="text" id="cs2" value="0">
+       <br>
+       Total:<br>
+       <input type="text" id="t1" value="0" readonly>
+       <br>
+   </div>
+   <div class="txt_block2">
+
+       Charges Variables<br><br>
+       Chauffage:<br>
+       <input type="text" id="c1" value="0">
+       <br>
+       Frais vétérinaires:<br>
+       <input type="text" id="c2" value="0">
+       <br>
+       Désinfection:<br>
+       <input type="text" id="c3" value="0">
+       <br>
+       Eau et électricité:<br>
+       <input type="text" id="c4" value="0">
+       <br>
+       Cotisation groupement et taxes:<br>
+       <input type="text" id="c5" value="0">
+       <br>
+       Enlèvement animaux:<br>
+       <input type="text" id="c6" value="0">
+       <br>
+       Litière et enlèvement fumier:<br>
+       <input type="text" id="c7" value="0">
+       <br>
+       Total:<br>
+       <input type="text" id="t2" value="0" readonly>
+       <br>
+   </div>
+   <div class="txt_block3">
+
+    Aliment et poussins<br><br>
+    Aliment:<br>
+    <input type="text" id="c8" value="0">
+    <br>
+    Poussins:<br>
+    <input type="text" id="c9" value="0">
+    <br>
+    Total:<br>
+    <input type="text" id="t3" value="0" readonly>
+    <br>
+</div>
+<div class="txt_block4">
+
+    Rémunération travail éleveur:<br>
+    <input type="text" id="c10" value="0">
+    <br>
+</div>
+<div class="txt_block5">
+
+    COÛT DE PRODUCTION:<br>
+    <input type="text" id="r1" value="0" readonly>
+    <br>
+
+    Coût de production (hors rémunération éleveur):<br>
+    <input type="text" id="r2" value="0" readonly>
+    <br>
+    <br>
+    <button onclick="calculate();">Valider</button>
+
+</div>
+
+
+
+</body>
+</html>

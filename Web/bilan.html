@@ -1,0 +1,439 @@
+<html>
+
+<head>
+
+<script>
+
+
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+ 
+  <title>Gestionnaire d'élevage par Firas Jribi</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
+
+        <body>
+          <div id="wrapper">
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="index.php">Gestionnaire d'élevage</a>
+              </div>
+              <!-- Top Menu Items -->
+              <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                  <ul class="dropdown-menu message-dropdown">
+                    <li class="message-preview">
+                      <a href="#">
+                        <div class="media"> <span class="pull-left">
+                          <img class="media-object" src="http://placehold.it/50x50" alt="">
+                        </span>
+                        <div class="media-body">
+                          <h5 class="media-heading"> <strong>Firas Jribi</strong> </h5>
+                          <p class="small text-muted"><i class="fa fa-clock-o"></i>Hier à 4:32 PM</p>
+                          <p>Test.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="message-preview">
+                    <a href="#">
+                      <div class="media"> <span class="pull-left">
+                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                      </span>
+                      <div class="media-body">
+                        <h5 class="media-heading"> <strong>Firas Jribi</strong> </h5>
+                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Hier à 4:32 PM</p>
+                        <p>Test!</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="message-footer">
+                  <a href="#">Lire tous les messages</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+              <ul class="dropdown-menu alert-dropdown">
+                <li>
+                  <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                </li>
+                <li>
+                  <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                </li>
+                <li>
+                  <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                </li>
+                <li>
+                  <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                </li>
+                <li>
+                  <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                </li>
+                <li>
+                  <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">View All</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Firas Jribi <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav text-center">
+              <li>
+                <a href="index.php" class="text-center">Accueil</a>
+              </li>
+              <li >
+                <a href="climat.html">Climat</a>
+              </li>
+              <li>
+                <a href="production.html"> Production</a>
+              </li>
+              <li>
+                <a href="activite.html">Activité</a>
+              </li>
+              <li>
+                <a href="rapports.html">Bilan technique</a>
+              </li>
+              <li class="active">
+                <a href="bilan.html">Bilan économique</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </nav>
+        <div id="page-wrapper">
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row">
+              <div class="col-lg-12">
+                <h1 class="page-header"> Bilan économique
+                  <font color="#777777"><span style="font-size: 23.4px;">Vérifiez la rentabilité de votre élevage!</span></font>
+                </h1>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-md-12">
+               <script type="text/javascript">
+
+        function calculate() {
+
+
+            var x=4628*2334/1000;
+            var n1 = parseFloat(document.getElementById('c1').value);
+            var n2 = parseFloat(document.getElementById('c2').value);
+            var n3 = parseFloat(document.getElementById('c3').value);
+            var n4 = parseFloat(document.getElementById('c4').value);
+            var n5 = parseFloat(document.getElementById('c5').value);
+            var n6 = parseFloat(document.getElementById('c6').value);
+            var n7 = parseFloat(document.getElementById('c7').value);
+            var n8 = parseFloat(document.getElementById('c8').value);
+            var n9 = parseFloat(document.getElementById('c9').value);
+            var n10 = parseFloat(document.getElementById('c10').value);
+            var n11 = parseFloat(document.getElementById('cs1').value);
+            var n12 = parseFloat(document.getElementById('cs2').value);
+            var n22 = parseFloat(document.getElementById('cs22').value);
+            var nt1 = n11+n12+n22;
+            var nt2 = n1+n2+n3+n4+n5+n6+n7;
+            var nt3 = n8+n9;
+            document.getElementById('t1').value = nt1;
+            document.getElementById('t2').value = nt2;
+            document.getElementById('t3').value = nt3;
+            var n100 = parseFloat(document.getElementById('t1').value);
+            var n110 = parseFloat(document.getElementById('t2').value);
+            var n120 = parseFloat(document.getElementById('t3').value);
+            var nr1= n10+n100+n110+n120;
+            var nr2= n100+n110+n120;
+            document.getElementById('r1').value = nr1;
+            document.getElementById('r2').value = nr2;
+            var n99 = parseFloat(document.getElementById('pv').value);
+
+            document.getElementById('vcs1').value = (n11/x).toFixed(2);
+            document.getElementById('vcs2').value = (n12/x).toFixed(2);
+            document.getElementById('vcs22').value = (n22/x).toFixed(2);
+            document.getElementById('vc1').value = (n1/x).toFixed(2);
+            document.getElementById('vc2').value = (n2/x).toFixed(2);
+            document.getElementById('vc3').value = (n3/x).toFixed(2);
+            document.getElementById('vc4').value = (n4/x).toFixed(2);
+            document.getElementById('vc5').value = (n5/x).toFixed(2);
+            document.getElementById('vc6').value = (n6/x).toFixed(2);
+            document.getElementById('vc7').value = (n7/x).toFixed(2);
+            document.getElementById('vc8').value = (n8/x).toFixed(2);
+            document.getElementById('vc9').value = (n9/x).toFixed(2);
+            document.getElementById('vc10').value = (n10/x).toFixed(2);
+            document.getElementById('vt1').value = (nt1/x).toFixed(2);
+            document.getElementById('vt2').value = (nt2/x).toFixed(2);
+            document.getElementById('vt3').value = (nt3/x).toFixed(2);
+            document.getElementById('vr1').value = (nr1/x).toFixed(2);
+            document.getElementById('vr2').value = (nr2/x).toFixed(2);
+
+            document.getElementById('pcs1').value = ((n11/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pcs2').value = ((n12/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pcs22').value = ((n22/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc1').value = ((n1/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc2').value = ((n2/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc3').value = ((n3/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc4').value = ((n4/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc5').value = ((n5/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc6').value = ((n6/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc7').value = ((n7/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc8').value = ((n8/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc9').value = ((n9/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pc10').value = ((n10/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pt1').value = ((nt1/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pt2').value = ((nt2/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pt3').value = ((nt3/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pr1').value = ((nr1/x)*100/(nr1/x)).toFixed(2);
+            document.getElementById('pr2').value = ((nr2/x)*100/(nr1/x)).toFixed(2);
+
+            document.getElementById('rb').value = (x*n99).toFixed(2);
+            document.getElementById('rn').value = (x*n99-nr1).toFixed(2);
+            document.getElementById('rnp').value = ((x*n99-nr1)/4628).toFixed(2);
+            document.getElementById('rnk').value = ((x*n99-nr1)/x).toFixed(2);
+
+
+        }
+    </script>
+
+
+    
+
+</div>
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#f38630;}
+.tg .tg-j2zy{background-color:#FCFBE3;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap">
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Postes</th>
+    <th class="tg-yw4l">DT</th>
+    <th class="tg-yw4l">DT / kg vif</th>
+    <th class="tg-yw4l">% coût de production</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Dotation aux amortissements</td>
+    <td class="tg-j2zy"><input type="text" id="cs1" ></td>
+    <td class="tg-yw4l"><input type="text" id="vcs1"  readonly></td>
+        <td class="tg-j2zy"><input type="text" id="pcs1" ></td>
+
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Frais Financiers</td>
+    <td class="tg-j2zy"><input type="text" id="cs22" ></td>
+    <td class="tg-yw4l"><input type="text" id="vcs22"  readonly></td>
+        <td class="tg-j2zy"><input type="text" id="pcs22" ></td>
+
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Autres charges de structure:</td>
+    <td class="tg-j2zy"><input type="text" id="cs2" ></td>
+    <td class="tg-yw4l"><input type="text" id="vcs2"  readonly></td>
+        <td class="tg-j2zy"><input type="text" id="pcs2" ></td>
+
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><strong>Total charges de structure</strong></td>
+    <td class="tg-j2zy"><input type="text" id="t1"  readonly></td>
+    <td class="tg-yw4l"><input type="text" id="vt1"  readonly></td>
+        <td class="tg-j2zy"><input type="text" id="pt1" ></td>
+
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Chauffage</td>
+    <td class="tg-j2zy"><input type="text" id="c1" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc1"  readonly></td>
+    <td class="tg-j2zy"><input type="text" id="pc1" ></td>
+
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Frais vétérinaires</td>
+    <td class="tg-j2zy"><input type="text" id="c2" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc2"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc2" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Désinfection</td>
+    <td class="tg-j2zy"><input type="text" id="c3" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc3"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc3" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Eau et électricité</td>
+    <td class="tg-j2zy"><input type="text" id="c4" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc4"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc4" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Cotisation groupement et taxes</td>
+    <td class="tg-j2zy"><input type="text" id="c5" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc5"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc5" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Enlèvement animaux</td>
+    <td class="tg-j2zy"><input type="text" id="c6" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc6"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc6" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Litière et enlèvement fumier</td>
+    <td class="tg-j2zy"><input type="text" id="c7" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc7"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc7" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><strong>Total charges variables</strong></td>
+    <td class="tg-j2zy"><input type="text" id="t2"  readonly=""></td>
+    <td class="tg-yw4l"><input type="text" id="vt2"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pt2" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Aliment</td>
+    <td class="tg-j2zy"><input type="text" id="c8" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc8"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc8" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Poussins</td>
+    <td class="tg-j2zy"><input type="text" id="c9" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc9"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc9" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><strong>Total aliment-poussin</strong></td>
+    <td class="tg-j2zy"><input type="text" id="t3"  readonly=""></td>
+    <td class="tg-yw4l"><input type="text" id="vt3"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pt3" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Rémunération travail éleveur</td>
+    <td class="tg-j2zy"><input type="text" id="c10" ></td>
+    <td class="tg-yw4l"><input type="text" id="vc10"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pc10" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">COÛT DE PRODUCTION</td>
+    <td class="tg-j2zy"><input type="text" id="r1"  readonly=""></td>
+    <td class="tg-yw4l"><input type="text" id="vr1"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pr1" ></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Coût de production (hors rémunération éleveur)</td>
+    <td class="tg-j2zy"><input type="text" id="r2"  readonly=""></td>
+    <td class="tg-yw4l"><input type="text" id="vr2"  readonly=""></td>
+    <td class="tg-j2zy"><input type="text" id="pr2" ></td>
+  </tr>
+</table>
+<br>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Prix de vente / kg</th>
+    <th class="tg-yw4l">Revenu brût</th>
+    <th class="tg-yw4l">Revenu net</th>
+    <th class="tg-yw4l">Net / poulet</th>
+    <th class="tg-yw4l">Net / kg vif</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><input type="text" id="pv"  style="width: 145px;"></td>
+    <td class="tg-j2zy"><input type="text" id="rb"  readonly="" style="width: 120px;"></td>
+    <td class="tg-yw4l"><input type="text" id="rn"  readonly="" style="width: 120px;"></td>
+    <td class="tg-j2zy"><input type="text" id="rnp"  readonly="" style="width: 120px;"></td>
+    <td class="tg-yw4l"><input type="text" id="rnk"  readonly="" style="width: 120px;"></td>
+  </tr>
+</table>
+<br> Date de vente:
+                     <br>
+                     <br>
+                     <input type="date" name="date1" style="float: left">
+ <form action="/bilanbar.php" target="iframe">                   
+
+<input type="submit" value="Valider" onclick="calculate();"> 
+ </form>
+<br>
+<br>
+</div>
+
+
+<iframe src="iframe.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" width="100%"  name="iframe" style="border:none;">
+               <div id="myfirstchart" style="height: 400px;">            </div>
+             </iframe>
+             
+             
+           </div>
+         </div>
+
+
+
+       </div>
+       <!-- /.row -->
+     </div>
+     <!-- /.container-fluid -->
+   </div>
+   <!-- /#page-wrapper -->
+ </div>
+ <!-- /#wrapper -->
+
+
+
+ 
+</body>
+
+</html>
